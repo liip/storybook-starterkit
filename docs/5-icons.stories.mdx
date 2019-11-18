@@ -1,0 +1,25 @@
+import { Meta, Story, IconGallery, IconItem } from '@storybook/addon-docs/blocks';
+
+<Meta title="Docs|Icons" />
+
+# Icons
+
+Those are all the icons available in the SVG sprite, i.e. that you can use like `box-open` here:
+
+```twig
+  {% include '@componentsPath/icon.twig' with { id: 'box-open', title: 'An example icon' } only %}
+```
+
+Or without Twig, with the following snippet:
+
+```html
+<svg class="ico ico--box-open" aria-hidden="true" focusable="false" role="img">
+  <use xlink:href="/assets/icons.svg#box-open" />
+</svg>
+```
+
+<IconGallery>
+  <IconItem name="International">
+    <Story id="atoms-icon--default" />
+  </IconItem>
+</IconGallery>

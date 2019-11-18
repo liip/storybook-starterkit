@@ -1,0 +1,23 @@
+<!--
+  -- Manager Head
+  --
+  -- Your scripts will run before Storybook’s React UI. Also be aware, that
+  -- this is an uncommon scenario and could potentially break Storybook’s UI.
+  -- So use with caution.
+  -->
+<link rel="shortcut icon" href="/favicon.ico">
+
+<!--
+  -- It's not currently possible to theme Storybook icons with through the
+  -- `theme.js` configuration.
+  -- See: https://github.com/storybookjs/storybook/issues/6436
+  -->
+<style>
+  .sidebar-svg-icon {
+    color: #6EA644 !important;
+  }
+
+  .sidebar-item.selected .sidebar-svg-icon {
+    color: #FFF !important;
+  }
+</style>

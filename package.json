@@ -1,0 +1,36 @@
+{
+  "name": "storybook-html-standalone",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "start": "start-storybook -p 3000 -s public",
+    "build": "concurrently 'npm run build:storybook' 'npm run build:styleguide'",
+    "build:storybook": "build-storybook -c .storybook -s public -o dist",
+    "build:styleguide": "",
+    "release": "echo \"No release script specified, skipping…\" && exit 0",
+    "deploy": "echo \"No deploy script specified, skipping…\" && exit 0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@storybook/addon-a11y": "^v5.3.0-beta.0",
+    "@storybook/addon-actions": "^v5.3.0-beta.0",
+    "@storybook/addon-docs": "^v5.3.0-beta.0",
+    "@storybook/addon-knobs": "^v5.3.0-beta.0",
+    "@storybook/html": "^v5.3.0-beta.0",
+    "babel-loader": "^8.0.6",
+    "concurrently": "^5.0.0",
+    "css-loader": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.13.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "react": "^16.10.2",
+    "sass-loader": "^8.0.0",
+    "svg-sprite-loader": "^4.1.6",
+    "svgo-loader": "^2.2.1",
+    "twig": "^1.14.0",
+    "twig-loader": "^0.5.1",
+    "twigjs-loader": "^1.0.1"
+  }
+}
