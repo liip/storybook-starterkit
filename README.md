@@ -53,5 +53,18 @@ You can customize Storybook interface with the following files:
 * `.storybook/manager-head.html` for overriding styles that are not supported by the `theme.js`
 * `.storybook/parameters.js` for showing/hiding parts of the Storybook interface
 
-**Note**: You can add, remove or change the sorting of stories kinds by updating
-the `rootOrder` array in the `storySort` function, in the `./storybook.parameters.js` file.
+**Note**: You can find the `storySort` function to sort stories and stories kinds in the tree view (sidebar)
+in the `./storybook/parameters.js` file. You can add, remove or change the order of appearance by changing
+the `rootOrder` array.
+
+Example:
+```js
+storySort: (a, b) => {
+  // ...
+
+  // Sort by root names, using the ordering specified in rootOrder array.
+  const rootOrder = ['Atoms', 'Molecules', 'Organisms', 'Docs'];
+
+  // ...
+}
+```
