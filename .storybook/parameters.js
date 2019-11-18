@@ -73,7 +73,7 @@ export default {
 
       // If the two stories are from the "Docs" kind, sort filenames
       // alphabetically.
-      if (aRootName === 'Docs' && bRootName === 'Docs') {
+      if (rootOrder.includes('Docs') && (aRootName === 'Docs' && bRootName === 'Docs')) {
         const aFullPath = a[1].parameters.fileName.split('/');
         const bFullPath = b[1].parameters.fileName.split('/');
 

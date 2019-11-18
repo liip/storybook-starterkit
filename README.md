@@ -35,6 +35,14 @@ You're all set, start to:
 * Put some `.svg` icons in the `assets/icons` directory
 * Write documentation as `.stories.mdx` (Markdown and JSX) files inside the `docs` directory.
 
+## Formatting and Linting
+
+The documenation has not yet be written.
+
+## Testing
+
+The documenation has not yet be written.
+
 ## Build
 
 You can build a static version of the styleguide to deploy it wherever you like by running:
@@ -44,6 +52,18 @@ $ npm run build
 ```
 
 The generated files go to the dist directory.
+
+## Release
+
+The documenation has not yet be written.
+
+## Deploy
+
+The documenation has not yet be written.
+
+## Browser Support
+
+The documenation has not yet be written.
 
 ## Theming
 
