@@ -1,11 +1,6 @@
 // -----------------------------------------------------------------------------
-// Stylesheet for the styleguide
+// Icons
+// You can find the icons in the `src/assets/icons` folder.
 // -----------------------------------------------------------------------------
 
-body {
-  color: blue;
-}
-
-.test {
-  background-color: black;
-}
+import 'icons/international.svg';

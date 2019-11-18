@@ -5,12 +5,12 @@ import parameters from './parameters';
 /**
  * Styleguide Stylesheets
  */
-import '../assets/scss/styleguide.scss';
+import '../src/assets/scss/styleguide.scss';
 
 /**
  * Styleguide Scripts
  */
-import '../assets/js/styleguide.js';
+import '../src/assets/js/styleguide.js';
 
 /**
  * Parameters

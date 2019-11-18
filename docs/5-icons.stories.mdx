@@ -1,5 +1,7 @@
 import { Meta, Story, IconGallery, IconItem } from '@storybook/addon-docs/blocks';
 
+import template from '@/components/atoms/icon/icon.twig';
+
 <Meta title="Docs|Icons" />
 
 # Icons
@@ -20,6 +22,8 @@ Or without Twig, with the following snippet:
 
 <IconGallery>
   <IconItem name="International">
-    <Story id="atoms-icon--default" />
+    {() => {
+      return template({ id: 'international' });
+    }}
   </IconItem>
 </IconGallery>

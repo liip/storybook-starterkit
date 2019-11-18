@@ -1,0 +1,7 @@
+{% set uid = 'ico' ~ random() %}
+<svg class="ico ico--{{ id }}{% if class %} {{ class }}{% endif %}" {% if title %}aria-labelledby="{{ uid }}"{% else %}aria-hidden="true"{% endif %} focusable="false" role="img">
+  {% if title %}
+    <title id="{{ uid }}">{{ title }}</title>
+  {% endif %}
+  <use xlink:href="/assets/icons.svg#{{ id }}" />
+</svg>

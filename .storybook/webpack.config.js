@@ -13,16 +13,14 @@ module.exports = async ({ config, mode }) => {
   /**
    * Entries
    */
-  config.entry.push('./assets/js/styleguide.js');
+  config.entry.push('./src/assets/js/styleguide.js');
 
   /**
    * Resolve
    */
-  config.resolve.modules.push(path.resolve(__dirname, '../assets'));
-  config.resolve.modules.push(path.resolve(__dirname, '../assets/js'));
+  config.resolve.modules.push(path.resolve(__dirname, '../src/assets'));
+  config.resolve.modules.push(path.resolve(__dirname, '../src/assets/js'));
   config.resolve.modules.push('node_modules');
-  config.resolve.extensions.push('.js');
-
   config.resolve.alias['@'] = path.resolve(
     __dirname,
     '../src/'
@@ -65,7 +63,7 @@ module.exports = async ({ config, mode }) => {
 
   config.module.rules.push({
     test: /\.svg$/,
-    include: path.resolve('./assets/icons'),
+    include: path.resolve('./src/assets/icons'),
     use: [
       {
         loader: 'svg-sprite-loader',
