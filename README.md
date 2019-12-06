@@ -1,4 +1,4 @@
-# storybook-staterkit
+# Storybook Starterkit
 
 ## Installation
 
@@ -28,12 +28,12 @@ You can now access your styleguide at `localhost:3000`.
 
 You're all set, start to:
 
-* Create components as `.twig` (Twig) files inside the `src` directory
-* Create Storybook stories as `.stories.js` alongside `.twig` components inside the `src` directory
-* Write some styles inside `assets/scss/styleguide.scss`
-* Write JavaScript inside `assets/js/styleguide.js`
-* Put some `.svg` icons in the `assets/icons` directory
-* Write documentation as `.stories.mdx` (Markdown and JSX) files inside the `docs` directory.
+- Create components as `.twig` (Twig) files inside the `src` directory
+- Create Storybook stories as `.stories.js` alongside `.twig` components inside the `src` directory
+- Write some styles inside `assets/scss/styleguide.scss`
+- Write JavaScript inside `assets/js/styleguide.js`
+- Put some `.svg` icons in the `assets/icons` directory
+- Write documentation as `.stories.mdx` (Markdown and JSX) files inside the `docs` directory.
 
 ## Formatting and Linting
 
@@ -69,22 +69,23 @@ The documenation has not yet be written.
 
 You can customize Storybook interface with the following files:
 
-* `.storybook/theme.js` for styles that are natively supported by Storybook
-* `.storybook/manager-head.html` for overriding styles that are not supported by the `theme.js`
-* `.storybook/parameters.js` for showing/hiding parts of the Storybook interface
+- `.storybook/theme.js` for styles that are natively supported by Storybook
+- `.storybook/manager-head.html` for overriding styles that are not supported by the `theme.js`
+- `.storybook/parameters.js` for showing/hiding parts of the Storybook interface
 
 **Note**: You can find the `storySort` function to sort stories and stories kinds in the tree view (sidebar)
 in the `./storybook/parameters.js` file. You can add, remove or change the order of appearance by changing
 the `rootOrder` array.
 
 Example:
+
 ```js
 storySort: (a, b) => {
   // ...
 
   // Sort by root names, using the ordering specified in rootOrder array.
-  const rootOrder = ['Atoms', 'Molecules', 'Organisms', 'Docs'];
+  const rootOrder = ["Atoms", "Molecules", "Organisms", "Docs"];
 
   // ...
-}
+};
 ```
