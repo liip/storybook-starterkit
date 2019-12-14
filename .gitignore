@@ -1,9 +1,3 @@
-#
-# Git Ignore
-#
-
-# Dependencies
-node_modules/
-
-# Static version of the styleguide
-dist/
+/node_modules
+/build
+/dist

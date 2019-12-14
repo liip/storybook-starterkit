@@ -1,0 +1,19 @@
+{
+  "npm": {
+    "publish": false
+  },
+  "hooks": {
+    "before:init": ["npm run validate"],
+    "after:conventional-changelog:beforeRelease": "npm run build",
+    "after:release": "npm run deploy"
+  },
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "preset": "angular",
+      "infile": "CHANGELOG.mdx"
+    },
+    "@release-it/bumper": {
+      "out": { "file": "dist/VERSION", "type": "text/plain" }
+    }
+  }
+}

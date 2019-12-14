@@ -10,8 +10,8 @@ export default create({
   base: 'light',
 
   // Storybook-specific color palette
-  colorPrimary: '#6EA644',
-  colorSecondary: '#6EA644',
+  colorPrimary: 'rgb(30, 167, 253)',
+  colorSecondary: 'rgb(30, 167, 253)',
 
   // UI
   appBg: '#F9F9F9',
@@ -38,7 +38,7 @@ export default create({
 
   // Toolbar default and active colors
   barTextColor: '#999999',
-  barSelectedColor: '#6EA644',
+  barSelectedColor: 'rgb(30, 167, 253)',
   barBg: '#FFFFFF',
 
   // Form colors
@@ -47,7 +47,6 @@ export default create({
   inputTextColor: '#333333',
   inputBorderRadius: 4,
 
-  brandTitle: 'Liip Web Styleguide',
-  brandUrl: 'https://styleguide.liip.com',
-  brandImage: require('./assets/logo.svg'),
+  brandTitle: 'Storybook',
+  brandImage: require('./logo.svg'),
 });

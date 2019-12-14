@@ -1,0 +1,52 @@
+import { Meta, Story, Preview, Source } from '@storybook/addon-docs/blocks';
+import { PropsTable } from '@storybook/components';
+import LinkTo from '@storybook/addon-links/react';
+import icon from './icon.twig';
+
+<Meta title="Atoms/Icon" />
+
+# Icon
+
+Check the "Icons" page in the docs to see <LinkTo kind="docs-icons" story="page">all available icons</LinkTo>.
+
+<Preview>
+  <Story name="Default">
+    {() => {
+      return icon({
+        id: 'arrow-left',
+        class: 'icon--100',
+      });
+    }}
+  </Story>
+</Preview>
+
+## Template Props
+
+<PropsTable
+  rows={[
+    {
+      name: 'id',
+      type: { summary: 'string' },
+      required: true,
+      description:
+        'The ID of the icon in the sprite, correspond to the icon file name.',
+    },
+    {
+      name: 'title',
+      type: { summary: 'string' },
+      description:
+        'Icons are hidden to screen-readers by default. In case you use an icon alone within an interactive element (button, link, …) **you must specify a title to describe the action** (and not the icon itself) to the user in place of the icon.\n\nFor example: take a button made of a single `trash` icon used to delete an item from a list; in this case the title could be "Delete".',
+    },
+    {
+      name: 'class',
+      type: { summary: 'string' },
+      description: 'Additional classes that will be applied to the icon.',
+    },
+    {
+      name: 'spritePath',
+      type: { summary: 'string' },
+      description: 'The path to the icons sprite SVG file',
+      defaultValue: { summary: '/assets/icons.svg' },
+    },
+  ]}
+/>

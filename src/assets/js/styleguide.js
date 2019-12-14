@@ -1,8 +1,8 @@
-// -----------------------------------------------------------------------------
-// Scripts for the styleguide
-// -----------------------------------------------------------------------------
+/*----------------------------------------*\
+  Main entry point
+\*----------------------------------------*/
 
-/**
- * User Interface
- */
-import 'ui/icons';
+import '@/assets/css/styleguide.css';
+
+// Load all icons to be included in the sprite
+require.context('@/assets/icons');
